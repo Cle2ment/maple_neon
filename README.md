@@ -5,7 +5,7 @@
 ![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio_v2.0%2B-red?logo=Github)
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
-![Static Badge](https://img.shields.io/badge/Release-v1.2.1-green)
+![Static Badge](https://img.shields.io/badge/Release-v2.0.0-green)
 <div style="text-align: center">
 English |
 <a href="https://github.com/BoningtonChen/CherryStudio_themes/blob/master/docs/README.zh.md">中文</a> |
