@@ -1,7 +1,7 @@
 # Maple Neon : Un thème pour Cherry Studio
 
 ![Free Palestine](https://freepalestinemovement.org/wp-content/uploads/2013/06/banner.jpg)
-![Cherry Studio](../assets/cherry-logo.png)
+![Cherry Studio](../assets/cherry-logo.svg)
 ![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio_v2.0%2B-red?logo=Github)
 ![Static Badge](https://img.shields.io/badge/License-AGPL--3.0-blue)
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
