@@ -8,9 +8,9 @@
 ![Static Badge](https://img.shields.io/badge/Release-v2.0.0-green)
 <div style="text-align: center">
 中文 |
-<a href="https://github.com/BoningtonChen/CherryStudio_themes/blob/master/README.md">English</a> |
-<a href="https://github.com/BoningtonChen/CherryStudio_themes/blob/master/docs/README.fr.md">Français</a> |
-<a href="https://github.com/BoningtonChen/CherryStudio_themes/blob/master/docs/README.ja.md">日本語</a>
+<a href="https://github.com/Cle2ment/maple_neon/blob/master/README.md">English</a> |
+<a href="https://github.com/Cle2ment/maple_neon/blob/master/docs/README.fr.md">Français</a> |
+<a href="https://github.com/Cle2ment/maple_neon/blob/master/docs/README.ja.md">日本語</a>
 </div>
 
 ## 介绍

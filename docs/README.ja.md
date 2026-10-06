@@ -7,9 +7,9 @@
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
 ![Static Badge](https://img.shields.io/badge/Release-v2.0.0-green)
 <div style="text-align: center">
-<a href="https://github.com/BoningtonChen/CherryStudio_themes/blob/master/docs/README.zh.md">中文</a> |
-<a href="https://github.com/BoningtonChen/CherryStudio_themes/blob/master/README.md">English</a> |
-<a href="https://github.com/BoningtonChen/CherryStudio_themes/blob/master/docs/README.fr.md">Français</a> |
+<a href="https://github.com/Cle2ment/maple_neon/blob/master/docs/README.zh.md">中文</a> |
+<a href="https://github.com/Cle2ment/maple_neon/blob/master/README.md">English</a> |
+<a href="https://github.com/Cle2ment/maple_neon/blob/master/docs/README.fr.md">Français</a> |
 日本語
 </div>
 
