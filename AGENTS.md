@@ -12,6 +12,7 @@ Maple Neon — a pure CSS theme for Cherry Studio (desktop LLM client). Mixes Ma
 ```
 ./
 ├── themes/       # Deliverable theme CSS (3 variants)
+├── assets/       # In-repo images (cherry-logo.svg — keep README images relative, never hotlink)
 ├── templates/    # Cherry Studio upstream CSS reference (gitignored, untracked — local-only)
 ├── docs/         # Multilingual README translations (zh, fr, ja)
 ├── examples/     # Screenshots (light/dark mode)
