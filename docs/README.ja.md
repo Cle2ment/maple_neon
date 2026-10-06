@@ -3,7 +3,7 @@
 ![Free Palestine](https://freepalestinemovement.org/wp-content/uploads/2013/06/banner.jpg)
 ![Cherry Studio](https://www.cherry-ai.com/assets/cherry-logo-CtmH594q.svg)
 ![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio_v2.0%2B-red?logo=Github)
-![Static Badge](https://img.shields.io/badge/License-MIT-blue)
+![Static Badge](https://img.shields.io/badge/License-AGPL--3.0-blue)
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
 ![Static Badge](https://img.shields.io/badge/Release-v2.0.0-green)
 <div style="text-align: center">
@@ -348,4 +348,4 @@ Cherry Studio v2.x をベースに
 
 ## LICENSE
 
-本プロジェクトは [MIT LICENSE](../LICENSE)に準拠しています。
+本プロジェクトは [AGPL-3.0 LICENSE](../LICENSE)に準拠しています。
