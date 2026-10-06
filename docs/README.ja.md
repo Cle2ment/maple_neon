@@ -2,7 +2,7 @@
 
 ![Free Palestine](https://freepalestinemovement.org/wp-content/uploads/2013/06/banner.jpg)
 ![Cherry Studio](https://www.cherry-ai.com/assets/cherry-logo-CtmH594q.svg)
-![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio-red?logo=Github)
+![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio_v2.0%2B-red?logo=Github)
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
 ![Static Badge](https://img.shields.io/badge/Release-v1.2.1-green)
@@ -15,16 +15,16 @@
 
 ## 紹介
 
-これはCherry Studioに特化したテーマです。Cherry Studioは複数の大規模言語モデルプロバイダをサポートするデスクトップクライアントで、Windows、Mac、Linuxシステムで使用可能です。\
+これはCherry Studioに特化したテーマです。Cherry Studioは複数の大規模言語モデルプロバイダをサポートするデスクトップクライアントで、Windows、Mac、Linuxシステムで使用可能です。本テーマは **Cherry Studio v2.0+** を対象とし、v2 テーマ API（セマンティック CSS 変数と `data-ui` フック）に基づいて構築されています。\
 Cherry Studioに関する詳細情報は、[こちら](https://github.com/CherryHQ/cherry-studio)を参照してください。
 
 ## 使用方法
 
-1. （推奨ですが必須ではありません）[Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip)からMaple Mono NF CNをダウンロードしてください。このフォントが好きでない場合、既定の代替フォントは`Fira Code`になります。
-2. （推奨ですが必須ではありません）[DreamHan Font](https://github.com/Pal3love/dream-han-cjk/releases)からDreamHan SansとDreamHan Serifをダウンロードしてください。このフォントが好きでない場合、システムはMicrosoft YaHeiを代替フォントとして使用します。
-3. [maple-neon.css](../themes/maple-neon.css) ファイル（オリジナルバージョン）の内容をコピーするか、rawファイルをダウンロードして（カスタマイズ用）ください。
-4. それをCherry Studioに貼り付けてください。
-5. 完了！
+1. （任意）フォントをダウンロードします：[Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip)からMaple Mono NF CNを、[DreamHan Font](https://github.com/Pal3love/dream-han-cjk/releases)からDreamHan SansとDreamHan Serifを入手します。未インストールの場合は代替フォント（`Fira Code` / Microsoft YaHei）が適用されます。Cherry Studio内蔵の**フォント設定**（グローバルフォント / コードフォント）で、インストール済みのフォントを選ぶこともできます。
+2. [maple-neon.css](../themes/maple-neon.css) の全文をコピーします — フルバージョン（フォント + ネオン走馬灯アニメーション + 公式トークンマッピング）。軽量な変体も2つ用意されています：[maple-neon-font-minimal.css](../themes/maple-neon-font-minimal.css)（フォントのみ）と [just-flowing-border.css](../themes/just-flowing-border.css)（流れるボーダーアニメーションのみ）。
+3. Cherry Studioで**設定 → 表示設定 → カスタムCSS**を開き、CSSを貼り付けます。
+4. **v1からのアップグレードユーザーの方へ**：v2では旧カスタムCSSは自動的に無効化され、先頭に `/* cherry-studio:custom-css:v1 */` というマーカー行が追加されます。旧内容は本テーマのv2版全文で置き換え、マーカー行は残さないでください。
+5. 保存するとすぐに反映され、リアルタイムでプレビュー・微調整できます。
 
 <details>
 <summary>または、変更したくない場合は、ここから直接CSSをコピーしてください！</summary>
@@ -303,20 +303,28 @@ var {
 
 ## 特徴
 
-- Cherry Studioにモダンで美しいユーザーインターフェイスを提供します。
+- Cherry Studio v2.0+ にモダンで美しいユーザーインターフェイスを提供します。v2 テーマ API（セマンティック CSS 変数と `data-ui` フック）に基づいて構築されています。
 - Mapleフォントとネオンスタイルの入力欄を組み合わせ、ユニークで視覚的に印象的な使用体験を提供します。
 - DreamHanフォントシリーズとMicrosoft YaHeiを使用して、優れた中国語フォント表示効果を提供します。
+- 3つの変体を用意しています：`maple-neon.css`（フル：フォント + ネオン走馬灯アニメーション + 公式トークンマッピング）、`maple-neon-font-minimal.css`（フォントのみ）、`just-flowing-border.css`（流れるボーダーアニメーションのみ）。
 
 ## デモンストレーション
 
-Cherry Studio v1.2.4をベースに
+Cherry Studio v2.x をベースに
 ![明るいページ](../examples/main-page-light.png)
 
 ![暗いページ](../examples/main-page-dark.png)
 
 ## カスタマイズ
 
-このプロジェクトをフォークして独自のCherry Studioテーマを変更することができます。詳細な説明は、[Cherry Studio ドキュメント](https://docs.cherry-ai.com/personalization-settings/css)を参照してください。
+テーマの配色は、CSS冒頭の `:root` で定義された小さなパレット変数から取得します。色を変えるには、ハードコードされた色を探すのではなく、これらの変数を編集してください：
+
+- `--mn-orange`：`#ff6a01`
+- `--mn-yellow`：`#f8c91c`
+- `--mn-violet`：`#8a2be2`
+- `--mn-cyan`：`#00d4ff`
+
+このプロジェクトをフォークして独自のCherry Studioテーマを変更することもできます。詳細な説明は、[Cherry Studio ドキュメント](https://docs.cherry-ai.com/personalization-settings/css)を参照してください。
 
 ## 他のテーマを見る
 

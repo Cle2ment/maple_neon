@@ -2,7 +2,7 @@
 
 ![Free Palestine](https://freepalestinemovement.org/wp-content/uploads/2013/06/banner.jpg)
 ![Cherry Studio](https://www.cherry-ai.com/assets/cherry-logo-CtmH594q.svg)
-![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio-red?logo=Github)
+![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio_v2.0%2B-red?logo=Github)
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
 ![Static Badge](https://img.shields.io/badge/Release-v1.2.1-green)
@@ -15,16 +15,16 @@
 
 ## 介绍
 
-这是一款为Cherry Studio量身定制的主题，Cherry Studio是一款支持多个大语言模型供应商的桌面客户端，可在Windows、Mac和Linux系统上使用。\
+这是一款为Cherry Studio量身定制的主题，Cherry Studio是一款支持多个大语言模型供应商的桌面客户端，可在Windows、Mac和Linux系统上使用。本主题面向 **Cherry Studio v2.0+**，基于 v2 主题 API（语义 CSS 变量与 `data-ui` 钩子）构建。\
 如需了解更多关于Cherry Studio的信息，请查看[此处](https://github.com/CherryHQ/cherry-studio)。
 
 ## 使用方法
 
-1. （推荐但非必需）从 [Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip) 下载Maple Mono NF CN。如果你不喜欢该字体，默认的备用字体应为`Fira Code`。
-2. （推荐但非必需）从 [梦源字体](https://github.com/Pal3love/dream-han-cjk/releases) 下载梦源黑体和梦源宋体。如果你不喜欢该字体，系统将使用微软雅黑作为备用字体。
-3. 复制 [maple-neon.css](../themes/maple-neon.css) 文件（原始版本）中的内容，或下载原始文件（用于定制）。
-4. 将其粘贴到 Cherry Studio 中。
-5. 完成！
+1. （可选）下载字体：从 [Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip) 下载 Maple Mono NF CN，从 [梦源字体](https://github.com/Pal3love/dream-han-cjk/releases) 下载梦源黑体和梦源宋体。未安装时会回退到备用字体（`Fira Code` / 微软雅黑）。你也可以在 Cherry Studio 内置的**字体设置**（全局字体 / 代码字体）中选择已安装的字体。
+2. 复制 [maple-neon.css](../themes/maple-neon.css) 的全文——完整版（字体 + 霓虹跑马灯动画 + 官方 token 映射）。另有两个精简变体：[maple-neon-font-minimal.css](../themes/maple-neon-font-minimal.css)（仅字体）与 [just-flowing-border.css](../themes/just-flowing-border.css)（仅流光边框动画）。
+3. 在 Cherry Studio 中进入**设置 → 显示设置 → 自定义 CSS**，粘贴以上 CSS。
+4. **从 v1 升级的用户请注意**：v1 旧自定义 CSS 在 v2 中会被自动停用，并在首行加入 `/* cherry-studio:custom-css:v1 */` 标记行。请用本主题 v2 版全文替换旧内容，且不要保留该标记行。
+5. 保存后即时生效，可实时预览并微调。
 
 <details>
 <summary>或者，如果你不想修改，直接从这里复制CSS！</summary>
@@ -303,20 +303,28 @@ var {
 
 ## 特别之处
 
-- 为Cherry Studio提供现代且美观的用户界面。
+- 为 Cherry Studio v2.0+ 提供现代且美观的用户界面，基于 v2 主题 API（语义 CSS 变量与 `data-ui` 钩子）构建。
 - 将Maple字体与霓虹风格的输入栏相结合，打造独特且视觉效果出众的使用体验。
 - 使用梦源字体系列和微软雅黑提供优质的中文字体显示效果。
+- 提供三个变体：`maple-neon.css`（完整版：字体 + 霓虹跑马灯动画 + 官方 token 映射）、`maple-neon-font-minimal.css`（仅字体）与 `just-flowing-border.css`（仅流光边框动画）。
 
 ## 展示
 
-基于Cherry Studio v1.2.4
+基于 Cherry Studio v2.x
 ![浅色页面](../examples/main-page-light.png)
 
 ![深色页面](../examples/main-page-dark.png)
 
 ## 自定义
 
-您可以 fork 该项目并修改自己的 Cherry Studio 主题，具体说明请查看 [Cherry Studio 文档](https://docs.cherry-ai.com/personalization-settings/css)。
+主题的配色来自 CSS 顶部 `:root` 中定义的一组调色板变量。要换色，请修改这些变量，而不必四处查找硬编码颜色：
+
+- `--mn-orange`：`#ff6a01`
+- `--mn-yellow`：`#f8c91c`
+- `--mn-violet`：`#8a2be2`
+- `--mn-cyan`：`#00d4ff`
+
+您也可以 fork 该项目并修改自己的 Cherry Studio 主题，具体说明请查看 [Cherry Studio 文档](https://docs.cherry-ai.com/personalization-settings/css)。
 
 ## 多看一眼
 

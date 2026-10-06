@@ -2,7 +2,7 @@
 
 ![Free Palestine](https://freepalestinemovement.org/wp-content/uploads/2013/06/banner.jpg)
 ![Cherry Studio](https://www.cherry-ai.com/assets/cherry-logo-CtmH594q.svg)
-![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio-red?logo=Github)
+![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio_v2.0%2B-red?logo=Github)
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
 ![Static Badge](https://img.shields.io/badge/Release-v1.2.1-green)
@@ -15,16 +15,16 @@ English |
 
 ## Introduction
 
-This is a theme tailored for Cherry Studio, a desktop client that supports for multiple LLM providers, available on Windows, Mac and Linux. \
+This is a theme tailored for Cherry Studio, a desktop client that supports for multiple LLM providers, available on Windows, Mac and Linux. It targets **Cherry Studio v2.0+** and is built on the v2 theme API (semantic CSS variables and `data-ui` hooks). \
 For more information about Cherry Studio, check [here](https://github.com/CherryHQ/cherry-studio).
 
 ## How to USE
 
-1. (Recommended but not necessary) Download Maple Mono NF CN from [Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip). If you do not like the font, the default fallback font should be `Fira Code`.
-2. (Recommended but not necessary) Download DreamHan Sans and DreamHan Serif from [DreamHan Font](https://github.com/Pal3love/dream-han-cjk/releases). If you do not like the font, the system will use Microsoft YaHei as fallback font.
-3. Copy the content in [maple-neon.css](./themes/maple-neon.css) file(for original version) or download the raw file(for customization).
-4. Paste it into Cherry Studio.
-5. Here you go!
+1. (Optional) Download the fonts: Maple Mono NF CN from [Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip) and DreamHan Sans / DreamHan Serif from [DreamHan Font](https://github.com/Pal3love/dream-han-cjk/releases). Without them, fallbacks (`Fira Code` / Microsoft YaHei) apply. You can also pick the fonts you have installed in Cherry Studio's built-in **Font Settings** (global font / code font).
+2. Copy the full content of [maple-neon.css](./themes/maple-neon.css) — the full version (fonts + neon marquee animation + official token mapping). Two lighter variants are available: [maple-neon-font-minimal.css](./themes/maple-neon-font-minimal.css) (fonts only) and [just-flowing-border.css](./themes/just-flowing-border.css) (flowing border animation only).
+3. In Cherry Studio, go to **Settings → Display Settings → Custom CSS** and paste the CSS.
+4. **Upgrading from v1?** In v2 your old custom CSS is automatically disabled with a `/* cherry-studio:custom-css:v1 */` marker line added at the top. Replace the whole content with this theme's v2 version, and do not keep the marker line.
+5. It takes effect immediately after saving, so you can preview and fine-tune live.
 
 <details>
 <summary>Or, if you don't want to modify, directly copy CSS from here!</summary>
@@ -303,20 +303,28 @@ var {
 
 ## What's special about the theme?
 
-- It provides modernized and aesthetic UI for Cherry Studio.
+- It provides modernized and aesthetic UI for Cherry Studio v2.0+, built on the v2 theme API (semantic CSS variables and `data-ui` hooks).
 - It mixes the Maple font with a neon-styled input-bar, creating a unique and visually appealing experience.
 - Uses DreamHan font series and Microsoft YaHei to provide excellent Chinese font display effects.
+- Ships in three variants: `maple-neon.css` (full: fonts + neon marquee animation + official token mapping), `maple-neon-font-minimal.css` (fonts only) and `just-flowing-border.css` (flowing border animation only).
 
 ## Demonstration
 
-Based on Cherry Studio v1.2.4
+Based on Cherry Studio v2.x
 ![Page Light](./examples/main-page-light.png)
 
 ![Page Dark](./examples/main-page-dark.png)
 
 ## Customization
 
-You can fork the project and modify your own theme for Cherry Studio, for exact instructions, check [Cherry Studio Docs](https://docs.cherry-ai.com/personalization-settings/css).
+The theme derives its colors from a small palette defined at the top `:root` of the CSS. To recolor it, edit those variables instead of searching for hardcoded colors:
+
+- `--mn-orange`: `#ff6a01`
+- `--mn-yellow`: `#f8c91c`
+- `--mn-violet`: `#8a2be2`
+- `--mn-cyan`: `#00d4ff`
+
+You can also fork the project and modify your own theme for Cherry Studio; for exact instructions, check [Cherry Studio Docs](https://docs.cherry-ai.com/personalization-settings/css).
 
 ## One more Glance
 

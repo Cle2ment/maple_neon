@@ -2,7 +2,7 @@
 
 ![Free Palestine](https://freepalestinemovement.org/wp-content/uploads/2013/06/banner.jpg)
 ![Cherry Studio](https://www.cherry-ai.com/assets/cherry-logo-CtmH594q.svg)
-![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio-red?logo=Github)
+![Static Badge](https://img.shields.io/badge/Tailored_for-Cherry_Studio_v2.0%2B-red?logo=Github)
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 ![Static Badge](https://img.shields.io/badge/Language-CSS-pink?logo=css)
 ![Static Badge](https://img.shields.io/badge/Release-v1.2.1-green)
@@ -15,16 +15,16 @@ Français |
 
 ## Introduction
 
-Ceci est un thème conçu pour Cherry Studio, un client de bureau qui prend en charge plusieurs fournisseurs de modèles de langage (LLM) et est disponible sur Windows, Mac et Linux. \
+Ceci est un thème conçu pour Cherry Studio, un client de bureau qui prend en charge plusieurs fournisseurs de modèles de langage (LLM) et est disponible sur Windows, Mac et Linux. Ce thème cible **Cherry Studio v2.0+** et s'appuie sur l'API de thème v2 (variables CSS sémantiques et hooks `data-ui`). \
 Pour plus d'informations sur Cherry Studio, consultez [ici](https://github.com/CherryHQ/cherry-studio).
 
 ## Comment utiliser
 
-1. (Recommandé mais pas obligatoire) Téléchargez Maple Mono NF CN depuis [Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip). Si vous n'aimez pas cette police, la police de secours par défaut devrait être `Fira Code`.
-2. (Recommandé mais pas obligatoire) Téléchargez DreamHan Sans et DreamHan Serif depuis [DreamHan Font](https://github.com/Pal3love/dream-han-cjk/releases). Si vous n'aimez pas cette police, le système utilisera Microsoft YaHei comme police de secours.
-3. Copiez le contenu du fichier [maple-neon.css](../themes/maple-neon.css) (pour la version d'origine) ou téléchargez le fichier brut (pour la personnalisation).
-4. Collez-le dans Cherry Studio.
-5. Et voilà !
+1. (Facultatif) Téléchargez les polices : Maple Mono NF CN depuis [Maple Font](https://github.com/subframe7536/maple-font/releases/download/v7.3/MapleMono-NF-CN-unhinted.zip) et DreamHan Sans / DreamHan Serif depuis [DreamHan Font](https://github.com/Pal3love/dream-han-cjk/releases). À défaut, les polices de secours (`Fira Code` / Microsoft YaHei) s'appliquent. Vous pouvez aussi choisir les polices déjà installées dans les **Paramètres de police** intégrés de Cherry Studio (police globale / police de code).
+2. Copiez l'intégralité du fichier [maple-neon.css](../themes/maple-neon.css) — la version complète (polices + animation de bandeau néon + mappage des tokens officiels). Deux variantes allégées sont disponibles : [maple-neon-font-minimal.css](../themes/maple-neon-font-minimal.css) (polices uniquement) et [just-flowing-border.css](../themes/just-flowing-border.css) (animation de bordure fluide uniquement).
+3. Dans Cherry Studio, ouvrez **Paramètres → Paramètres d'affichage → CSS personnalisé** et collez le CSS.
+4. **Vous migrez depuis la v1 ?** En v2, votre ancien CSS personnalisé est automatiquement désactivé et une ligne de marqueur `/* cherry-studio:custom-css:v1 */` est ajoutée en tête. Remplacez tout le contenu par la version v2 de ce thème, sans conserver la ligne de marqueur.
+5. La prise en effet est immédiate après l'enregistrement : vous pouvez prévisualiser et ajuster en direct.
 
 <details>
 <summary>Ou, si vous ne voulez pas modifier, copiez directement le CSS depuis ici !</summary>
@@ -303,20 +303,28 @@ var {
 
 ## Qu'est-ce qui rend le thème spécial ?
 
-- Il propose une interface utilisateur modernisée et esthétique pour Cherry Studio.
+- Il propose une interface utilisateur modernisée et esthétique pour Cherry Studio v2.0+, construite sur l'API de thème v2 (variables CSS sémantiques et hooks `data-ui`).
 - Il mêle la police Maple à une zone de saisie au style néon, créant une expérience unique et visuellement attractive.
 - Utilise la série de polices DreamHan et Microsoft YaHei pour fournir un excellent affichage des polices chinoises.
+- Propose trois variantes : `maple-neon.css` (complète : polices + animation de bandeau néon + mappage des tokens officiels), `maple-neon-font-minimal.css` (polices uniquement) et `just-flowing-border.css` (animation de bordure fluide uniquement).
 
 ## Démonstration
 
-Basé sur Cherry Studio v1.2.4
+Basé sur Cherry Studio v2.x
 ![Page claire](../examples/main-page-light.png)
 
 ![Page sombre](../examples/main-page-dark.png)
 
 ## Personnalisation
 
-Vous pouvez forker le projet et modifier votre propre thème pour Cherry Studio. Pour les instructions détaillées, consultez [Documentation Cherry Studio](https://docs.cherry-ai.com/personalization-settings/css).
+Le thème tire ses couleurs d'une petite palette définie en haut du CSS, dans `:root`. Pour le recolorer, modifiez ces variables plutôt que de chercher des couleurs codées en dur :
+
+- `--mn-orange` : `#ff6a01`
+- `--mn-yellow` : `#f8c91c`
+- `--mn-violet` : `#8a2be2`
+- `--mn-cyan` : `#00d4ff`
+
+Vous pouvez aussi forker le projet et modifier votre propre thème pour Cherry Studio. Pour les instructions détaillées, consultez [Documentation Cherry Studio](https://docs.cherry-ai.com/personalization-settings/css).
 
 ## Un dernier coup d'œil
 
